@@ -1,0 +1,22 @@
+.menu_side:hover{
+	background: #98620E !important;
+}
+.sub_menu_side_wrapper{
+	height: 0px;
+	transition: height .5s ease;
+}
+
+
+/* add product page */
+.add_color_div:hover{
+	background-color: #efefef;
+}
+.add_color_div:hover  div  p{
+	display : block !important;
+}
+.single_product_thumb:hover{
+	background-color: #efefef;	
+}
+.single_product_thumb:hover > p{
+	display : block !important;	
+}

@@ -1,0 +1,10 @@
+.top_menu_ul li a:hover{
+	font-weight: bold;
+}
+.header_logo{
+	width: 130px;
+}
+.main_menu li a:hover{
+	background-color: #13AAF5;
+	color: #fff;
+}

@@ -1,0 +1,9 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/js/pages/admin_panel.js": "/js/pages/admin_panel.js",
+    "/css/app.css": "/css/app.css",
+    "/css/style.css": "/css/style.css",
+    "/css/modal.css": "/css/modal.css",
+    "/css/pages/admin_panel.css": "/css/pages/admin_panel.css",
+    "/css/pages/home.css": "/css/pages/home.css"
+}
