@@ -151,7 +151,7 @@ class Checkout extends Component{
 				like_to_recieve_special_offer : this.state.like_to_recieve_special_offer,
 			}
 			let submission_data = {
-				customer_id : Math.floor(Math.random() * 10) + 1,
+				customer_id : Math.floor(Math.random() * 4) + 1,
 				checkout_info,
 				additional_cart_info,
 				products_in_cart
