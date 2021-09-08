@@ -79,14 +79,16 @@ class Left_menu extends Component{
 						<div className="fix fifteen_percent floatleft"><p className="text_white fs_16 lh_30 textright"><i className="fas fa-angle-left"></i></p></div>
 					</div>
 					<div className="fix full sub_menu_side_wrapper">
-						<div className="fix full menu_side pt_10 pr_10 pb_10 pl_30 border_box cursor_pointer submenu_div">
-							<div className="fix fifteen_percent floatleft">
-								<p className="text_white fs_12 lh_26"><span className="fs_20"><i className="fas fa-shopping-cart"></i></span></p>
+						<Link to='/manage/orders/view_orders'>
+							<div className="fix full menu_side pt_10 pr_10 pb_10 pl_30 border_box cursor_pointer submenu_div">
+								<div className="fix fifteen_percent floatleft">
+									<p className="text_white fs_12 lh_26"><span className="fs_20"><i className="fas fa-shopping-cart"></i></span></p>
+								</div>
+								<div className="fix eighty_five_percent floatleft">
+									<p className="text_white fs_12 lh_26">View Orders</p>
+								</div>
 							</div>
-							<div className="fix eighty_five_percent floatleft">
-								<p className="text_white fs_12 lh_26">View Orders</p>
-							</div>
-						</div>
+						</Link>
 						<div className="fix full menu_side pt_10 pr_10 pb_10 pl_30 border_box cursor_pointer submenu_div">
 							<div className="fix fifteen_percent floatleft">
 								<p className="text_white fs_12 lh_26"><span className="fs_20"><i className="fas fa-shopping-cart"></i></span></p>

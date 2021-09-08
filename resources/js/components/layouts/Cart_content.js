@@ -140,7 +140,7 @@ class Cart_content extends Component{
 							<div className="fix floatleft seven_by_ten">
 								<div className="fix full">
 									<p className="fs_14 lh_28 text_dark_ash floatleft">Subtotal</p>
-									<p className="fs_14 lh_28 text_dark_ash floatright">{this.props.allState.subtotal}</p>
+									<p className="fs_14 lh_28 text_dark_ash floatright">${this.props.allState.subtotal}</p>
 								</div>
 								<div className="fix full">
 									<p className="fs_14 lh_28 text_red floatleft">TOTAL OFF</p>

@@ -53,6 +53,10 @@ import View_colors from './pages/manage/colors/View_colors'
 import Edit_color from './pages/manage/colors/Edit_color'
 import Add_color from './pages/manage/colors/Add_color'
 
+/*Color orders*/
+import View_orders from './pages/manage/orders/View_orders'
+import View_order from './pages/manage/orders/View_order'
+
 class App extends Component{
     state = {
         common : {
@@ -90,7 +94,10 @@ class App extends Component{
                         <Route exact path='/manage/colors/edit_color/:id' component={Edit_color} />
                         <Route exact path='/manage/colors/view_colors' component={View_colors} />
                         <Route exact path='/manage/colors/add_color' component={Add_color} />
-                            
+                        
+                        <Route exact path='/manage/orders/view_orders' component={View_orders} />
+                        <Route exact path='/manage/orders/view_order/:id' component={View_order} />
+
                         
                         <Route exact path='/public/category/:slug'
                             render={(props) => (
