@@ -5,11 +5,15 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import { get, set } from '../../helpers/Local_storage_helper'
 class Header_logo_search extends Component{
 	constructor(){
 		super()
 	}
 	render(){
+		let products_in_cart = JSON.parse(get('products_in_cart'))
+
+		let number_of_products_in_cart = products_in_cart.length
 		return (
 			<div className="fix full bb_1 border_bottom_solid border_bottom_ash pt_10 pb_10">
 				<div className="fix div_mid nine_by_ten">
@@ -27,15 +31,23 @@ class Header_logo_search extends Component{
 						</div>
 					</div>
 					<div className="fix floatleft three_by_ten">
-						<div className="fix floatright pr_5 pl_5 lh_52">
-							<Link to='/cart'><i className="fas fa-shopping-basket"></i></Link>
+						<div className="fix floatright pr_5 pl_5 lh_52 position_relative">
+							<Link to='/cart'>
+								<div className="position_absolute t_10 r_0 lh_16 h_16 pl_5 pr_5 round_half bg_sky_blue ">
+									<p className="fs_12 text_white textcenter font_bold">{number_of_products_in_cart}</p>
+								</div>
+								<p className="fs_20">
+									<i className="fas fa-shopping-basket"></i>
+								</p>
+							</Link>
+							
 						</div>
 						
 						<div className="fix floatright pr_5 pl_5 lh_52">
-							<p><i className="far fa-heart"></i></p>
+							<p className="fs_20"><i className="far fa-heart"></i></p>
 						</div>
 						<div className="fix floatright pr_5 pl_5 lh_52">
-							<a href="account_login.html"><i className="far fa-user"></i></a>
+							<a href="account_login.html"><p className="fs_20"><i className="far fa-user"></i></p></a>
 						</div>
 					</div>	
 				</div>
@@ -45,4 +57,4 @@ class Header_logo_search extends Component{
 	}
 }
 
-export default Header_logo_search
+export default Header_logo_search 
